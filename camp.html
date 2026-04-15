@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Camp | The Ross Preschool - Ross, Marin County CA</title>
+  <meta name="description" content="Summer Camp at The Ross Preschool in Ross, Marin County CA. A week of outdoor adventures, art, water play, STEM, music, and pure fun for preschoolers ages 2–5. Register now.">
+  <meta name="keywords" content="summer camp Ross CA, preschool summer camp Marin County, kids summer camp Marin, outdoor camp preschool, summer program ages 2-5 Marin">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.therosspreschool.org/camp">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Ross Preschool">
+  <meta property="og:title" content="Summer Camp | The Ross Preschool">
+  <meta property="og:description" content="Outdoor adventures, art, water play, STEM, and pure fun for preschoolers. Summer Camp at The Ross Preschool in Ross, Marin County CA.">
+  <meta property="og:url" content="https://www.therosspreschool.org/camp">
+  <meta property="og:image" content="https://www.therosspreschool.org/hero.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Summer Camp | The Ross Preschool">
+  <meta name="twitter:description" content="Outdoor adventures, art, water play, STEM, and pure fun for preschoolers. Summer Camp at The Ross Preschool in Marin County CA.">
+  <meta name="twitter:image" content="https://www.therosspreschool.org/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <style>
+    /* ── CAMP PAGE EXTRAS ── */
+    .camp-hero {
+      position: relative;
+      min-height: 580px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1a2a5e 0%, #c8910e 60%, #f0c040 100%);
+    }
+    .camp-hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('images/preschool camp leaves artwork.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      opacity: 0.22;
+    }
+    .camp-hero-content {
+      position: relative;
+      text-align: center;
+      padding: 100px 28px 80px;
+      width: 100%;
+    }
+    .camp-hero .eyebrow-gold { font-size: 0.8rem; }
+    .camp-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      line-height: 1.13;
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 22px;
+    }
+    .camp-hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .camp-hero .lead-light {
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+    /* Sun badge */
+    .sun-badge {
+      display: inline-block;
+      background: var(--gold-light);
+      color: var(--navy-dark);
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 7px 20px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    /* Activity cards */
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .activity-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid var(--gray-light);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .activity-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .activity-icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+    .activity-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .activity-card p {
+      font-size: 0.93rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+    /* Details band */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 44px;
+    }
+    .detail-box {
+      text-align: center;
+      padding: 28px 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .detail-box .detail-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .detail-box h5 {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+    .detail-box p {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.5;
+    }
+    /* Camp CTA section */
+    .camp-cta {
+      background: linear-gradient(135deg, var(--gold) 0%, #e8a512 100%);
+      padding: 88px 0;
+      text-align: center;
+    }
+    .camp-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.9rem);
+      color: var(--navy-dark);
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .camp-cta p {
+      font-size: 1.05rem;
+      color: rgba(26,42,94,0.8);
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+    .btn-navy-dark {
+      background: var(--navy-dark);
+      color: var(--white);
+      padding: 16px 36px;
+      border-radius: 100px;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      transition: background 0.18s;
+      display: inline-block;
+    }
+    .btn-navy-dark:hover { background: var(--navy); }
+    .camp-url-note {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: rgba(26,42,94,0.6);
+    }
+    .camp-url-note a {
+      color: var(--navy-dark);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .activity-grid { grid-template-columns: 1fr; }
+      .details-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  ☀️ Summer Camp registration is open &nbsp;&nbsp;<a href="https://trpcamp.zite.so" target="_blank">Register now →</a>
+</div>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="The Ross Preschool"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="camp.html" class="active">Summer Camp</a>
+      <a href="https://trpenrolled.zite.so" target="_blank" class="nav-enrolled">Enrolled Families</a>
+      <a href="https://trpapply.zite.so" target="_blank" class="nav-cta">Apply / Tour</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav"><div class="mobile-nav-inner"><a href="index.html" class="mobile-link">Home</a><a href="about.html" class="mobile-link">About</a><a href="programs.html" class="mobile-link">Programs</a><a href="camp.html" class="mobile-link active">Summer Camp</a><div class="mobile-nav-footer"><a href="https://trpcamp.zite.so" target="_blank" class="btn btn-primary btn-lg">Register for Camp</a><a href="https://trpenrolled.zite.so" target="_blank" class="btn btn-outline-navy">Enrolled Families</a></div><p class="mobile-nav-meta">team@therosspreschool.org</p></div></div><script>(function(){var t=document.getElementById("navToggle"),n=document.getElementById("mobileNav");function cl(){t.classList.remove("open");n.classList.remove("open");document.body.classList.remove("nav-open");}t.addEventListener("click",function(){var o=n.classList.toggle("open");t.classList.toggle("open");document.body.classList.toggle("nav-open");t.setAttribute("aria-expanded",o);});document.addEventListener("keydown",function(e){if(e.key==="Escape")cl();});})()</script>
+
+<!-- CAMP HERO -->
+<section class="camp-hero">
+  <div class="camp-hero-bg"></div>
+  <div class="camp-hero-content">
+    <div class="sun-badge">☀️ Summer Camp at The Ross Preschool</div>
+    <h1>Where Every Summer Day<br>Feels Like an <em>Adventure</em></h1>
+    <p class="lead lead-light">Outdoor play, art, water fun, STEM discoveries, and new friendships  -  all wrapped up in the warmth and care that make TRP special. Camp is open to all preschoolers, not just enrolled TRP families.</p>
+    <div class="cta-group cta-group-center">
+      <a href="https://trpcamp.zite.so" target="_blank" class="btn btn-gold btn-lg">Register for Camp →</a>
+      <a href="#what-to-expect" class="btn btn-outline-white">Learn more ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT MAKES CAMP SPECIAL -->
+<section id="what-to-expect" class="section-pad" style="background: var(--white);">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <span class="eyebrow">The TRP Difference</span>
+        <h2 class="headline">More Than Just Summer Childcare</h2>
+        <div class="divider"></div>
+        <p class="body-text">Camp at The Ross Preschool isn't just a way to fill the summer  -  it's an experience kids genuinely look forward to and talk about for months after. We bring the same intentionality, warmth, and child-centered approach that defines our school year into every single camp week.</p>
+        <p class="body-text">Children spend the majority of their time outside in our incredible outdoor classroom  -  exploring, creating, getting wonderfully messy, and building the kind of friendships that only happen when kids have real space and real time to just be kids.</p>
+        <p class="body-text">Our teachers know children. They know how to spark curiosity, manage the beautiful chaos of excited preschoolers, and make every child feel seen and celebrated. That's what sets TRP camp apart.</p>
+        <div class="pill-row" style="margin-top: 24px;">
+          <div class="pill-dark pill">🌿 100% Outdoors</div>
+          <div class="pill-dark pill">👧 Ages 2–6</div>
+          <div class="pill-dark pill">🎨 Art Every Day</div>
+          <div class="pill-dark pill">💧 Water Play</div>
+          <div class="pill-dark pill">🌟 Open to All Families</div>
+        </div>
+      </div>
+      <div>
+        <img src="images/preschool camp leaves artwork.jpg" alt="Children enjoying summer camp at The Ross Preschool" style="width:100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section class="section-pad band-off-white">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 8px;">
+      <span class="eyebrow">What Kids Do All Day</span>
+      <h2 class="headline">Packed with Fun From<br>Drop-off to Pick-up</h2>
+      <p class="lead lead-center">Every camp day is a mix of structured activities and free exploration  -  so kids stay engaged, energized, and excited to come back tomorrow.</p>
+    </div>
+    <div class="activity-grid">
+      <div class="activity-card">
+        <div class="activity-icon">🎨</div>
+        <h4>Arts &amp; Crafts</h4>
+        <p>Painting, collage, sculpture, and process-based projects that let kids create freely and take home something they're proud of.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">💧</div>
+        <h4>Water Play</h4>
+        <p>Splash tables, water slides, sprinklers, and all the glorious messiness that makes summer childhood unforgettable.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🔬</div>
+        <h4>STEM Projects</h4>
+        <p>Hands-on experiments, building challenges, and sensory exploration that make science feel like pure magic.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🌿</div>
+        <h4>Nature &amp; Garden</h4>
+        <p>Tending the garden, exploring with magnifying glasses, and connecting with the natural world right in our outdoor classroom.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🎵</div>
+        <h4>Music &amp; Movement</h4>
+        <p>Songs, dancing, instruments, and silly games that get every kid on their feet and grinning from ear to ear.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🏴‍☠️</div>
+        <h4>Outdoor Adventure</h4>
+        <p>The pirate ship, gravel pit, mud kitchen, and open-ended play spaces that spark big imagination and even bigger energy.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">📚</div>
+        <h4>Story Time</h4>
+        <p>Engaging read-alouds, puppet shows, and dramatic play that build a love of stories and spark creative thinking.</p>
+      </div>
+      <div class="activity-card">
+        <div class="activity-icon">🤝</div>
+        <h4>Friendship &amp; Play</h4>
+        <p>Unstructured time to build real friendships  -  because some of the best learning happens when kids just play together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMP DETAILS -->
+<section class="section-pad band-navy">
+  <div class="container" style="text-align: center;">
+    <span class="eyebrow eyebrow-light">The Details</span>
+    <h2 class="headline headline-light" style="margin-bottom: 12px;">Good to Know Before You Register</h2>
+    <p class="lead lead-light lead-center" style="margin-bottom: 0;">Everything you need to plan your summer  -  flexible sessions, a relaxed pace, and a place your child will love.</p>
+    <div class="details-grid">
+      <div class="detail-box">
+        <div class="detail-icon">👧</div>
+        <h5>Ages</h5>
+        <p>2–6 years old</p>
+      </div>
+      <div class="detail-box">
+        <div class="detail-icon">📅</div>
+        <h5>Format</h5>
+        <p>Weekly sessions<br>throughout summer</p>
+      </div>
+      <div class="detail-box">
+        <div class="detail-icon">⏰</div>
+        <h5>Hours</h5>
+        <p>Morning &amp; extended<br>care available</p>
+      </div>
+      <div class="detail-box">
+        <div class="detail-icon">📍</div>
+        <h5>Location</h5>
+        <p>The Ross Preschool<br>Ross, CA 94957</p>
+      </div>
+      <div class="detail-box">
+        <div class="detail-icon">🌟</div>
+        <h5>Open To</h5>
+        <p>All families  -  not just<br>TRP enrolled students</p>
+      </div>
+      <div class="detail-box">
+        <div class="detail-icon">✅</div>
+        <h5>For New Families</h5>
+        <p>Children should be<br>potty trained &amp; kind</p>
+      </div>
+      <div class="detail-box">
+        <div class="detail-icon">🌿</div>
+        <h5>Setting</h5>
+        <p>Primarily outdoor<br>in our garden campus</p>
+      </div>
+    </div>
+    <div style="margin-top: 44px;">
+      <a href="https://trpcamp.zite.so" target="_blank" class="btn btn-gold btn-lg">See Dates &amp; Register →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL / FEEL SECTION -->
+<section class="section-pad" style="background: var(--white);">
+  <div class="container">
+    <div class="two-col flip">
+      <div>
+        <img src="images/happy children.jpg" alt="Happy children at The Ross Preschool summer camp" style="width:100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+      </div>
+      <div>
+        <span class="eyebrow">Our Team</span>
+        <h2 class="headline">Teachers, Counselors &amp; CITs  -  a Crew That Loves Kids</h2>
+        <div class="divider"></div>
+        <p class="body-text">Camp is led by TRP's own fabulous teaching team, supported by camp counselors and counselors-in-training (CITs). It's a multigenerational crew that genuinely loves kids and knows exactly how to make a summer day feel like the best one yet.</p>
+        <p class="body-text">Our ratios stay low by design. We want every child to feel known, cared for, and genuinely celebrated  -  not just supervised. The CIT program also gives older kids a chance to give back and grow as young leaders.</p>
+        <p class="body-text">Whether your child is a TRP alumnus or joining us for the very first time, they'll feel at home within about ten minutes. That's just how camp works here.</p>
+        <div class="cta-group" style="margin-top: 32px;">
+          <a href="mailto:team@therosspreschool.org" class="btn btn-outline-navy">Questions? Email us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER CTA -->
+<section class="camp-cta">
+  <div class="container">
+    <div class="sun-badge">☀️ Spots fill fast every summer</div>
+    <h2>Ready to Make This Summer<br>Unforgettable?</h2>
+    <p>Register online in minutes. Pick your weeks, choose your hours, and get your little one on the list  -  before it fills up.</p>
+    <a href="https://trpcamp.zite.so" target="_blank" class="btn-navy-dark">Register at www.therosspreschool.org/camp</a>
+    <p class="camp-url-note">
+      Direct link: <a href="https://www.therosspreschool.org/camp" target="_blank">www.therosspreschool.org/camp</a>
+    </p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="The Ross Preschool">
+        <p>A progressive, play-based preschool and pre-K program in Ross, Marin County, CA. Helping families raise capable, compassionate humans  -  ready for life.</p>
+      </div>
+      <div class="footer-col"><h5>Navigate</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="camp.html">Summer Camp</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>For Families</h5><ul><li><a href="https://trpapply.zite.so" target="_blank">Apply Now</a></li><li><a href="https://trpapply.zite.so" target="_blank">Schedule a Tour</a></li><li><a href="https://trpenrolled.zite.so" target="_blank">Enrolled Families</a></li><li><a href="https://trpcamp.zite.so" target="_blank">Summer Camp</a></li><li><a href="https://trpenrichmentsignup.zite.so/public" target="_blank">Afterschool Enrichment</a></li><li><a href="https://trpevents.zite.so/public" target="_blank">Special Events</a></li></ul></div>
+      <div class="footer-col"><h5>Connect</h5><ul><li><a href="https://facebook.com/therosspreschool" target="_blank">Facebook</a></li><li><a href="https://instagram.com/therosspreschool/" target="_blank">Instagram</a></li><li><a href="https://trpcareers.zite.so" target="_blank">Jobs at TRP</a></li><li><a href="https://donate.stripe.com/9AQg2Dc465Me93ifYY" target="_blank">Donate</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 The Ross Preschool · 501(c)3 Non-Profit · EIN: 26-4835669 · Ross, California</div>
+      <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">ig</a></div>
+    </div>
+  </div>
+</footer>
+
+</body></html>
