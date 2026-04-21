@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparency & Accountability | The Ross Preschool</title>
+  <meta name="description" content="Financial documents, governance policies, and organizational details for The Ross Preschool – a 501(c)(3) nonprofit preschool in Ross, Marin County, CA.">
+  <!-- PRIVATE PAGE: hidden from search engines and crawlers -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <style>
+    .trans-hero {
+      background: var(--navy);
+      padding: 80px 0 64px;
+      text-align: center;
+    }
+    .trans-hero .eyebrow { color: var(--gold-light); }
+    .trans-hero h1 { color: var(--white); margin: 12px 0 16px; font-size: clamp(2rem, 4vw, 2.8rem); }
+    .trans-hero p { color: rgba(255,255,255,0.75); max-width: 620px; margin: 0 auto; font-size: 1.05rem; line-height: 1.65; }
+
+    .doc-card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--white);
+      border: 1.5px solid #e0e5f0;
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.18s, border-color 0.18s;
+    }
+    .doc-card:hover {
+      box-shadow: 0 4px 18px rgba(26,42,94,0.10);
+      border-color: var(--navy);
+    }
+    .doc-card-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      width: 48px;
+      text-align: center;
+    }
+    .doc-card-body { flex: 1; }
+    .doc-card-title { font-weight: 700; color: var(--navy); font-size: 0.95rem; margin-bottom: 2px; }
+    .doc-card-meta { font-size: 0.8rem; color: var(--text-light); }
+    .doc-card-arrow { color: var(--gold); font-weight: 800; font-size: 1.1rem; flex-shrink: 0; }
+
+    .doc-list { display: flex; flex-direction: column; gap: 12px; }
+
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .policy-item {
+      background: var(--off-white);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      border-left: 4px solid var(--green);
+    }
+    .policy-item h4 { color: var(--navy); margin-bottom: 6px; font-size: 0.95rem; }
+    .policy-item p { font-size: 0.85rem; color: var(--text-light); margin: 0; line-height: 1.5; }
+
+    .finance-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .finance-stat {
+      background: var(--off-white);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+    }
+    .finance-stat-value { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); }
+    .finance-stat-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); margin-top: 4px; }
+
+    .finance-year-block { margin-bottom: 36px; padding-bottom: 36px; border-bottom: 1px solid #e0e5f0; }
+    .finance-year-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .finance-year-label { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+
+    .registry-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .registry-card {
+      background: var(--off-white);
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.18s;
+    }
+    .registry-card:hover { box-shadow: 0 4px 14px rgba(26,42,94,0.10); }
+    .registry-card-name { font-weight: 800; color: var(--navy); font-size: 0.9rem; margin-bottom: 4px; }
+    .registry-card-url { font-size: 0.78rem; color: var(--text-light); }
+
+    .board-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .board-card {
+      background: var(--off-white);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+    .board-card-name { font-weight: 800; color: var(--navy); font-size: 1rem; margin-bottom: 2px; }
+    .board-card-role { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green); margin-bottom: 8px; }
+    .board-card-note { font-size: 0.83rem; color: var(--text-light); }
+
+    .notice-banner {
+      background: #fffdf0;
+      border: 1.5px solid rgba(200,145,14,0.3);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      font-size: 0.85rem;
+      color: #7a5c00;
+      margin-bottom: 28px;
+    }
+    .notice-banner strong { color: #5a4000; }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  🌱 Play-based preschool &amp; pre-K · Ages 2–5 · Ross, Marin County, CA &nbsp;&nbsp;<a href="https://trpapply.zite.so" target="_blank">Apply / Tour →</a>
+</div>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="The Ross Preschool"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="camp.html">Summer Camp</a>
+      <a href="https://trpenrolled.zite.so" target="_blank" class="nav-enrolled">Enrolled Families</a>
+      <a href="https://trpapply.zite.so" target="_blank" class="nav-cta">Apply / Tour</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav"><div class="mobile-nav-inner"><a href="index.html" class="mobile-link">Home</a><a href="about.html" class="mobile-link">About</a><a href="programs.html" class="mobile-link">Programs</a><a href="camp.html" class="mobile-link">Summer Camp</a>
+<div class="mobile-nav-footer"><a href="https://trpapply.zite.so" target="_blank" class="btn btn-primary btn-lg">Apply / Tour</a><a href="https://trpenrolled.zite.so" target="_blank" class="btn btn-outline-navy">Enrolled Families</a></div><p class="mobile-nav-meta">team@therosspreschool.org</p></div></div><script>(function(){var t=document.getElementById("navToggle"),n=document.getElementById("mobileNav");function cl(){t.classList.remove("open");n.classList.remove("open");document.body.classList.remove("nav-open");}t.addEventListener("click",function(){var o=n.classList.toggle("open");t.classList.toggle("open");document.body.classList.toggle("nav-open");t.setAttribute("aria-expanded",o);});document.addEventListener("keydown",function(e){if(e.key==="Escape")cl();});})()</script>
+
+<!-- HERO -->
+<section class="trans-hero">
+  <div class="container">
+    <span class="eyebrow eyebrow-light">Direct Access Only · Not Indexed</span>
+    <h1>Transparency &amp; Accountability</h1>
+    <p>As a nonprofit preschool, The Ross Preschool operates in the trust of our families, our donors, and our wider community. This page makes that trust tangible – sharing how we are structured, governed, and how we use resources.</p>
+  </div>
+</section>
+
+<!-- QUICK JUMP NAV -->
+<section style="background: #f4f6fb; border-bottom: 1px solid #e0e5f0; padding: 16px 0;">
+  <div class="container">
+    <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 0.83rem; font-weight: 700;">
+      <span style="color: var(--text-light); font-weight: 600;">Jump to:</span>
+      <a href="#organization" style="color: var(--navy); text-decoration: none;">Organization</a>
+      <a href="#leadership" style="color: var(--navy); text-decoration: none;">Leadership &amp; Board</a>
+      <a href="#governance" style="color: var(--navy); text-decoration: none;">Governance Policies</a>
+      <a href="#financials" style="color: var(--navy); text-decoration: none;">Financial Documents</a>
+      <a href="#how-we-use-funds" style="color: var(--navy); text-decoration: none;">How We Use Funds</a>
+      <a href="#recognition" style="color: var(--navy); text-decoration: none;">Third-Party Recognition</a>
+    </div>
+  </div>
+</section>
+
+<!-- OUR ORGANIZATION -->
+<section id="organization" class="section-pad" style="background: var(--white);">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <span class="eyebrow">Legal Identity</span>
+        <h2 class="headline">Our Organization</h2>
+        <div class="divider"></div>
+        <p class="body-text">The Ross Preschool operates as a California nonprofit public benefit corporation and has been recognized as tax-exempt under Section 501(c)(3) of the Internal Revenue Code since 2011. All contributions to TRP are fully tax-deductible.</p>
+        <p class="body-text">Questions about our organization or this page? Reach out directly to our Executive Director at <a href="mailto:david@therosspreschool.org" style="color: var(--navy); font-weight: 600;">david@therosspreschool.org</a>.</p>
+      </div>
+      <div>
+        <div class="info-box">
+          <h4>Organization Details</h4>
+          <div class="info-list">
+            <div class="info-list-item">📋 <span><strong>Legal Name:</strong> San Francisco International School</span></div>
+            <div class="info-list-item">🏫 <span><strong>Doing Business As:</strong> The Ross Preschool</span></div>
+            <div class="info-list-item">🔢 <span><strong>EIN:</strong> 26-4835669</span></div>
+            <div class="info-list-item">✅ <span><strong>Federal Tax Status:</strong> 501(c)(3) Nonprofit – Public Charity</span></div>
+            <div class="info-list-item">📅 <span><strong>Tax-Exempt Since:</strong> November 15, 2011</span></div>
+            <div class="info-list-item">📄 <span><strong>IRS Determination Letter:</strong> February 20, 2014</span></div>
+            <div class="info-list-item">🏛️ <span><strong>State:</strong> California Nonprofit Public Benefit Corporation</span></div>
+            <div class="info-list-item">📍 <span><strong>Address:</strong> 14 Lagunitas Rd., Ross, CA 94957</span></div>
+            <div class="info-list-item">📞 <span><strong>Phone:</strong> (415) 215-4760</span></div>
+            <div class="info-list-item">📆 <span><strong>Fiscal Year:</strong> July 1 – June 30</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section-pad-sm band-off-white">
+  <div class="container" style="max-width: 780px;">
+    <span class="eyebrow">Purpose</span>
+    <h2 class="headline">Our Mission</h2>
+    <div class="divider"></div>
+    <p class="body-text">The Ross Preschool is a play-based, nature-oriented preschool serving children ages two through five. Our curriculum is intentionally designed to build social-emotional development, creativity, character, and a love of learning in the most formative years of a child's life.</p>
+    <p class="body-text">We operate as a nonprofit because we believe high-quality early education should be shaped by what children need – not by what pays. Every decision we make is guided by what's best for our children and families, not a profit margin.</p>
+  </div>
+</section>
+
+<!-- LEADERSHIP & BOARD -->
+<section id="leadership" class="section-pad" style="background: var(--white);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 44px;">
+      <span class="eyebrow">People</span>
+      <h2 class="headline">Leadership &amp; Board of Trustees</h2>
+      <p class="lead lead-center">TRP is led by an Executive Director and governed by a volunteer Board of Trustees. Our board oversees strategy and financial stewardship, and ensures the organization operates in alignment with its mission and legal obligations.</p>
+    </div>
+
+    <!-- Executive Director -->
+    <div style="margin-bottom: 44px;">
+      <h3 style="font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-light); margin-bottom: 16px;">Executive Director</h3>
+      <div class="board-card" style="max-width: 480px;">
+        <div class="board-card-name">David Hughes</div>
+        <div class="board-card-role">Executive Director</div>
+        <p class="board-card-note">Founder of The Ross Preschool and its predecessor Camp Doodles. David holds multiple California Child Development Permits, including Master Teacher, Site Supervisor, and Preschool Program Director. He is actively present in the school every day and leads all aspects of program, operations, and administration.</p>
+        <p class="board-card-note" style="margin-top: 8px;"><a href="mailto:david@therosspreschool.org" style="color: var(--navy);">david@therosspreschool.org</a> · (415) 215-4760</p>
+      </div>
+    </div>
+
+    <!-- Board of Trustees -->
+    <div>
+      <h3 style="font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-light); margin-bottom: 16px;">Board of Trustees</h3>
+      <div class="board-grid">
+        <div class="board-card">
+          <div class="board-card-name">David Hughes</div>
+          <div class="board-card-role">Director / Officer</div>
+          <p class="board-card-note">Serves as both Executive Director (compensated) and a member of the Board of Trustees. Board compensation is disclosed annually on Form 990.</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-name">Kendall Ermshar</div>
+          <div class="board-card-role">Director – Volunteer</div>
+          <p class="board-card-note">Volunteer board member. Serves without compensation. Brings expertise in [field – to be added] to TRP's governance and strategic planning.</p>
+        </div>
+        <div class="board-card">
+          <div class="board-card-name">Rory Lynch</div>
+          <div class="board-card-role">Director – Volunteer</div>
+          <p class="board-card-note">Volunteer board member. Serves without compensation. Brings expertise in [field – to be added] to TRP's governance and financial oversight.</p>
+        </div>
+      </div>
+      <p class="body-text" style="margin-top: 20px; font-size: 0.85rem; color: var(--text-light);">Board members serve in accordance with TRP's bylaws. Two of three board members are independent volunteers serving without compensation. Compensation for the Executive Director position is disclosed publicly on Form 990 filed annually with the IRS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNANCE POLICIES -->
+<section id="governance" class="section-pad band-off-white">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <span class="eyebrow">How We Operate</span>
+      <h2 class="headline">Governance Policies</h2>
+      <p class="lead lead-center">The Ross Preschool maintains formal written policies governing how we operate, make decisions, and handle information. These policies are reviewed regularly by the Board of Trustees.</p>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-item">
+        <h4>Conflict of Interest Policy</h4>
+        <p>All trustees and key personnel annually disclose potential conflicts of interest. Decisions involving potential conflicts are recused and documented in board minutes. Policy available upon request.</p>
+      </div>
+      <div class="policy-item">
+        <h4>Whistleblower Protection Policy</h4>
+        <p>Employees and trustees are encouraged to report concerns about financial, legal, or ethical matters. Reports are handled confidentially and without retaliation. Policy available upon request.</p>
+      </div>
+      <div class="policy-item" style="border-left-color: var(--gold);">
+        <h4>Document Retention &amp; Destruction Policy</h4>
+        <p>TRP maintains a written policy governing retention, secure storage, and destruction of financial, operational, and personnel records in compliance with California and federal requirements.</p>
+      </div>
+      <div class="policy-item" style="border-left-color: var(--navy);">
+        <h4>Code of Ethics</h4>
+        <p>TRP operates under a clear set of ethical expectations for trustees, staff, and contractors – covering honesty, fiduciary duty, and the welfare of the children in our care.</p>
+      </div>
+    </div>
+    <p class="body-text" style="margin-top: 28px; font-size: 0.85rem; color: var(--text-light); text-align: center;">To request copies of any governance policy document, contact <a href="mailto:david@therosspreschool.org" style="color: var(--navy);">david@therosspreschool.org</a>.</p>
+  </div>
+</section>
+
+<!-- FINANCIAL DOCUMENTS -->
+<section id="financials" class="section-pad" style="background: var(--white);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 44px;">
+      <span class="eyebrow">Transparency</span>
+      <h2 class="headline">Financial Documents</h2>
+      <p class="lead lead-center">We believe donors and families should be able to see how The Ross Preschool uses its resources. The following documents are published for public review.</p>
+    </div>
+
+    <!-- 990s -->
+    <div style="margin-bottom: 48px;">
+      <h3 style="font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-light); margin-bottom: 8px;">IRS Form 990 – Annual Tax Returns</h3>
+      <p class="body-text" style="margin-bottom: 20px; font-size: 0.9rem;">Our Form 990 is filed annually with the IRS and is publicly available. It discloses revenue, expenses, compensation, governance, and program details for each fiscal year.</p>
+
+      <!-- FY2025 -->
+      <div class="finance-year-block">
+        <div class="finance-year-label">Fiscal Year Ending June 30, 2025 · Filed March 9, 2026</div>
+        <div class="finance-stat-grid" style="margin-bottom: 20px;">
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.32M</div>
+            <div class="finance-stat-label">Total Revenue</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.19M</div>
+            <div class="finance-stat-label">Total Expenses</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$122K</div>
+            <div class="finance-stat-label">Net Income</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.88M</div>
+            <div class="finance-stat-label">Total Assets</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$500K</div>
+            <div class="finance-stat-label">Total Liabilities</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.38M</div>
+            <div class="finance-stat-label">Net Assets</div>
+          </div>
+        </div>
+        <div class="doc-list">
+          <a href="https://projects.propublica.org/nonprofits/organizations/264835669/202610689349300201/full" target="_blank" class="doc-card">
+            <div class="doc-card-icon">📄</div>
+            <div class="doc-card-body">
+              <div class="doc-card-title">Form 990 – Fiscal Year Ended June 30, 2025</div>
+              <div class="doc-card-meta">Hosted by ProPublica Nonprofit Explorer · Full filing including all schedules</div>
+            </div>
+            <div class="doc-card-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- FY2024 -->
+      <div class="finance-year-block">
+        <div class="finance-year-label">Fiscal Year Ending June 30, 2024 · Filed December 24, 2025</div>
+        <div class="finance-stat-grid" style="margin-bottom: 20px;">
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.35M</div>
+            <div class="finance-stat-label">Total Revenue</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.16M</div>
+            <div class="finance-stat-label">Total Expenses</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$190K</div>
+            <div class="finance-stat-label">Net Income</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.75M</div>
+            <div class="finance-stat-label">Total Assets</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$491K</div>
+            <div class="finance-stat-label">Total Liabilities</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.26M</div>
+            <div class="finance-stat-label">Net Assets</div>
+          </div>
+        </div>
+        <div class="doc-list">
+          <a href="https://projects.propublica.org/nonprofits/organizations/264835669/202543589349300814/full" target="_blank" class="doc-card">
+            <div class="doc-card-icon">📄</div>
+            <div class="doc-card-body">
+              <div class="doc-card-title">Form 990 – Fiscal Year Ended June 30, 2024</div>
+              <div class="doc-card-meta">Hosted by ProPublica Nonprofit Explorer · Full filing including all schedules</div>
+            </div>
+            <div class="doc-card-arrow">→</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- FY2023 -->
+      <div class="finance-year-block">
+        <div class="finance-year-label">Fiscal Year Ending June 30, 2023 · Filed December 24, 2025</div>
+        <div class="finance-stat-grid" style="margin-bottom: 20px;">
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.49M</div>
+            <div class="finance-stat-label">Total Revenue</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.18M</div>
+            <div class="finance-stat-label">Total Expenses</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$304K</div>
+            <div class="finance-stat-label">Net Income</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.58M</div>
+            <div class="finance-stat-label">Total Assets</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$504K</div>
+            <div class="finance-stat-label">Total Liabilities</div>
+          </div>
+          <div class="finance-stat">
+            <div class="finance-stat-value">$1.08M</div>
+            <div class="finance-stat-label">Net Assets</div>
+          </div>
+        </div>
+        <div class="doc-list">
+          <a href="https://projects.propublica.org/nonprofits/organizations/264835669/202543589349300219/full" target="_blank" class="doc-card">
+            <div class="doc-card-icon">📄</div>
+            <div class="doc-card-body">
+              <div class="doc-card-title">Form 990 – Fiscal Year Ended June 30, 2023</div>
+              <div class="doc-card-meta">Hosted by ProPublica Nonprofit Explorer · Full filing including all schedules</div>
+            </div>
+            <div class="doc-card-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Determination Letter -->
+    <div style="margin-bottom: 48px;">
+      <h3 style="font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-light); margin-bottom: 8px;">IRS 501(c)(3) Determination Letter</h3>
+      <p class="body-text" style="margin-bottom: 16px; font-size: 0.9rem;">Official letter from the IRS confirming The Ross Preschool's tax-exempt status as a public charity. Effective date of exemption: November 15, 2011. Letter dated February 20, 2014.</p>
+      <div class="doc-list">
+        <a href="media/legal/trp-irs-determination-letter-2014.pdf" target="_blank" class="doc-card">
+          <div class="doc-card-icon">🏛️</div>
+          <div class="doc-card-body">
+            <div class="doc-card-title">IRS Determination Letter – February 20, 2014</div>
+            <div class="doc-card-meta">Issued to San Francisco International School (DBA: The Ross Preschool) · EIN: 26-4835669</div>
+          </div>
+          <div class="doc-card-arrow">→</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Financial Statements -->
+    <div>
+      <h3 style="font-size: 1rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-light); margin-bottom: 8px;">Audited / Reviewed Financial Statements</h3>
+      <div class="notice-banner">
+        <strong>Coming soon.</strong> TRP is in the process of establishing annually prepared financial statements by an independent CPA. Completed statements will be posted here as they become available. The most current financial data is disclosed on our annual Form 990 above.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE USE FUNDS -->
+<section id="how-we-use-funds" class="section-pad band-off-white">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <span class="eyebrow">Stewardship</span>
+        <h2 class="headline">How We Use Funds</h2>
+        <div class="divider"></div>
+        <p class="body-text">TRP's resources come from three primary sources: tuition, charitable contributions, and investment income. Each plays a specific role in how we serve children.</p>
+
+        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 20px;">
+          <div>
+            <h4 style="color: var(--navy); margin-bottom: 6px;">Tuition</h4>
+            <p class="body-text" style="margin: 0; font-size: 0.9rem;">The majority of our revenue comes from tuition paid by families of enrolled children. Tuition directly supports classroom instruction, teacher compensation, facilities, and the everyday operation of the school.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--navy); margin-bottom: 6px;">Charitable Contributions</h4>
+            <p class="body-text" style="margin: 0; font-size: 0.9rem;">Donations from families, alumni, and the broader community support our two highest-priority investments: tuition assistance for families who cannot afford full tuition, and teacher compensation and retention – the single greatest driver of quality in early childhood education.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--navy); margin-bottom: 6px;">Investment Income</h4>
+            <p class="body-text" style="margin: 0; font-size: 0.9rem;">A modest portion of our revenue comes from responsibly managed reserves, which provide operational stability and long-term financial health.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="info-box" style="margin-bottom: 20px;">
+          <h4>FY2025 Revenue Breakdown</h4>
+          <div class="info-list">
+            <div class="info-list-item">🏫 <span><strong>Program Services (Tuition):</strong> $1,118,497 · 85.0%</span></div>
+            <div class="info-list-item">📈 <span><strong>Investment Income:</strong> $48,739 · 3.7%</span></div>
+            <div class="info-list-item">💰 <span><strong>Other Revenue:</strong> $148,443 · 11.3%</span></div>
+            <div class="info-list-item">📊 <span><strong>Total Revenue:</strong> $1,315,679</span></div>
+          </div>
+        </div>
+        <div class="info-box">
+          <h4>FY2025 Expense Breakdown</h4>
+          <div class="info-list">
+            <div class="info-list-item">👩‍🏫 <span><strong>Salaries &amp; Wages:</strong> $610,419 · 51.2% of expenses</span></div>
+            <div class="info-list-item">📊 <span><strong>Total Expenses:</strong> $1,193,085</span></div>
+            <div class="info-list-item">✅ <span><strong>Net Income:</strong> $122,594</span></div>
+          </div>
+        </div>
+
+        <!-- Tuition Assistance -->
+        <div style="background: var(--navy); color: var(--white); border-radius: var(--radius-md); padding: 24px; margin-top: 20px;">
+          <h4 style="color: var(--gold-light); margin-bottom: 8px;">Tuition Assistance</h4>
+          <p style="font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.6; margin: 0 0 12px;">Marin County is one of the highest-cost regions in the country. As a nonprofit, we exist to serve our community. Approximately 15% of our families currently receive tuition assistance. Our goal is to expand access further as philanthropic support grows.</p>
+          <p style="font-size: 0.83rem; color: rgba(255,255,255,0.65); margin: 0;">If tuition is a barrier, please reach out. We welcome the conversation.</p>
+          <a href="mailto:david@therosspreschool.org" style="display: inline-block; margin-top: 14px; background: var(--gold); color: var(--navy); border-radius: 6px; padding: 8px 18px; font-weight: 700; font-size: 0.82rem; text-decoration: none;">Contact Us →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THIRD-PARTY RECOGNITION -->
+<section id="recognition" class="section-pad" style="background: var(--white);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 36px;">
+      <span class="eyebrow">Verification</span>
+      <h2 class="headline">Third-Party Recognition</h2>
+      <p class="lead lead-center">The Ross Preschool is listed on the major independent nonprofit registries. We encourage donors and funders to verify our information directly.</p>
+    </div>
+    <div class="registry-grid">
+      <a href="https://www.guidestar.org/profile/26-4835669" target="_blank" class="registry-card">
+        <div class="registry-card-name">Candid (GuideStar)</div>
+        <div class="registry-card-url">guidestar.org · EIN: 26-4835669</div>
+      </a>
+      <a href="https://www.charitynavigator.org/ein/264835669" target="_blank" class="registry-card">
+        <div class="registry-card-name">Charity Navigator</div>
+        <div class="registry-card-url">charitynavigator.org · EIN: 264835669</div>
+      </a>
+      <a href="https://projects.propublica.org/nonprofits/organizations/264835669" target="_blank" class="registry-card">
+        <div class="registry-card-name">ProPublica Nonprofit Explorer</div>
+        <div class="registry-card-url">projects.propublica.org · EIN: 264835669</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ANNUAL REPORTING -->
+<section class="section-pad-sm band-off-white">
+  <div class="container" style="max-width: 720px;">
+    <span class="eyebrow">Annual Reporting</span>
+    <h2 class="headline" style="margin-bottom: 12px;">Annual Stewardship Reports</h2>
+    <div class="divider"></div>
+    <p class="body-text">Each year, TRP shares a stewardship report with our families and donors summarizing the year's programs, impact, and use of charitable gifts. Annual reports will be linked here as they are published.</p>
+    <div class="notice-banner" style="margin-top: 20px;">
+      <strong>Coming soon.</strong> Annual stewardship reports are being formalized and will be posted here beginning with the 2024–25 school year.
+    </div>
+  </div>
+</section>
+
+<!-- QUESTIONS -->
+<section class="enroll-section">
+  <div class="container enroll-inner">
+    <span class="eyebrow eyebrow-gold">Questions or Requests</span>
+    <h2 class="headline headline-light" style="margin: 12px auto 18px; max-width: 580px;">We're Happy to Answer</h2>
+    <p class="lead lead-light lead-center" style="margin-bottom: 32px;">Questions about our programs, governance, or finances are always welcome. We believe transparency builds trust, and trust is the foundation of everything we do.</p>
+    <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius-md); padding: 28px 32px; max-width: 420px; margin: 0 auto; text-align: left;">
+      <div style="color: var(--white); font-weight: 700; margin-bottom: 4px;">David Hughes</div>
+      <div style="color: rgba(255,255,255,0.6); font-size: 0.82rem; margin-bottom: 14px;">Executive Director</div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="mailto:david@therosspreschool.org" style="color: var(--gold-light); font-size: 0.9rem; text-decoration: none;">david@therosspreschool.org</a>
+        <a href="tel:4152154760" style="color: var(--gold-light); font-size: 0.9rem; text-decoration: none;">(415) 215-4760</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="The Ross Preschool">
+        <p>A progressive, play-based preschool and pre-K program in Ross, Marin County, CA. Helping families raise capable, compassionate humans  -  ready for life.</p>
+      </div>
+      <div class="footer-col"><h5>Navigate</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="camp.html">Summer Camp</a></li><li><a href="contact.html">Contact</a></li><li><a href="transparency.html">Transparency</a></li></ul></div>
+      <div class="footer-col"><h5>For Families</h5><ul><li><a href="https://trpapply.zite.so" target="_blank">Apply Now</a></li><li><a href="https://trpapply.zite.so" target="_blank">Schedule a Tour</a></li><li><a href="https://trpenrolled.zite.so" target="_blank">Enrolled Families</a></li><li><a href="https://trpcamp.zite.so" target="_blank">Summer Camps</a></li><li><a href="https://trpenrichmentsignup.zite.so/public" target="_blank">Afterschool Enrichment</a></li><li><a href="https://trpevents.zite.so/public" target="_blank">Special Events</a></li></ul></div>
+      <div class="footer-col"><h5>Connect</h5><ul><li><a href="https://facebook.com/therosspreschool" target="_blank">Facebook</a></li><li><a href="https://instagram.com/therosspreschool/" target="_blank">Instagram</a></li><li><a href="https://trpcareers.zite.so" target="_blank">Jobs at TRP</a></li><li><a href="https://donate.stripe.com/9AQg2Dc465Me93ifYY" target="_blank">Donate</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 The Ross Preschool · 501(c)3 Non-Profit · EIN: 26-4835669 · Ross, California</div>
+      <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">ig</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
