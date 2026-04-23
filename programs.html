@@ -51,7 +51,7 @@
   }</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -345,10 +345,11 @@
 
 <!-- NEXT PAGE -->
 <div class="next-page-band">
-  <div class="container"><div class="next-page-band-inner">
-    <span class="next-page-label">Continue Your Journey</span>
-    <a href="camp.html" class="next-page-link">Summer Camp <span class="next-page-arrow">→</span></a>
-  </div></div>
+  <div class="container">
+    <span class="eyebrow">Up Next</span>
+    <p class="next-page-heading">Summer Camp</p>
+    <a href="camp.html" class="next-page-btn">Discover Camp <span class="next-page-btn-arrow">→</span></a>
+  </div>
 </div>
 
 <footer class="site-footer">
@@ -374,7 +375,7 @@
 <script>
 (function(){
   var btn = document.getElementById("scrollTop");
-  window.addEventListener("scroll", function(){ btn.classList.toggle("visible", window.scrollY > 400); });
+  window.addEventListener("scroll", function(){ btn.classList.toggle("visible", window.scrollY > 200); });
   btn.addEventListener("click", function(){ window.scrollTo({top:0,behavior:"smooth"}); });
 })();
 </script>
