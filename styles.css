@@ -280,7 +280,7 @@ em.green { font-style: normal; color: var(--green-light); }
 .home-hero-bg {
   position: absolute;
   inset: 0;
-  background: url('hero.jpg') center top/cover no-repeat;
+  background: url('images/hero homepage image magnifying glass girl.jpg') center top/cover no-repeat;
   opacity: 0.38;
 }
 .home-hero-content {
