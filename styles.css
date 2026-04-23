@@ -898,6 +898,85 @@ body.nav-open { overflow: hidden; }
   .hero-badge { display: none; }
 }
 
+/* ── SCROLL TO TOP ── */
+.scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.2s;
+  z-index: 998;
+  text-decoration: none;
+}
+.scroll-top.visible { opacity: 1; transform: translateY(0); }
+.scroll-top:hover { background: var(--green); }
+@media (max-width: 700px) {
+  .scroll-top { bottom: 20px; right: 16px; width: 40px; height: 40px; font-size: 1rem; }
+}
+
+/* ── NEXT PAGE BAND ── */
+.next-page-band {
+  background: var(--green-pale);
+  border-top: 1px solid rgba(61,139,78,0.15);
+}
+.next-page-band-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0;
+  gap: 24px;
+}
+.next-page-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.next-page-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+  transition: gap 0.2s;
+}
+.next-page-link:hover { gap: 16px; color: var(--green); }
+.next-page-arrow {
+  width: 36px;
+  height: 36px;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.next-page-link:hover .next-page-arrow { background: var(--green); }
+@media (max-width: 700px) {
+  .next-page-band-inner { flex-direction: column; align-items: flex-start; padding: 24px 0; gap: 10px; }
+  .next-page-link { font-size: 1.1rem; }
+}
+
 /* --- Team sections --- */
 .leadership-grid {
   display: grid;

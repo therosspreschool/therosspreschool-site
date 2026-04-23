@@ -469,6 +469,14 @@
   </div>
 </section>
 
+<!-- NEXT PAGE -->
+<div class="next-page-band">
+  <div class="container"><div class="next-page-band-inner">
+    <span class="next-page-label">Continue Your Journey</span>
+    <a href="contact.html" class="next-page-link">Get in Touch <span class="next-page-arrow">→</span></a>
+  </div></div>
+</div>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -487,4 +495,12 @@
   </div>
 </footer>
 
+<button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+<script>
+(function(){
+  var btn = document.getElementById("scrollTop");
+  window.addEventListener("scroll", function(){ btn.classList.toggle("visible", window.scrollY > 400); });
+  btn.addEventListener("click", function(){ window.scrollTo({top:0,behavior:"smooth"}); });
+})();
+</script>
 </body></html>
