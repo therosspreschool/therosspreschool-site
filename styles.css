@@ -245,6 +245,8 @@ em.green { font-style: normal; color: var(--green-light); }
   margin-left: 4px;
 }
 .nav-links .nav-enrolled:hover { background: var(--off-white); color: var(--navy); border-color: var(--navy); }
+.nav-links .nav-donate { color: var(--gold); font-weight: 700; }
+.nav-links .nav-donate:hover { background: var(--gold-pale); color: var(--gold); }
 
 /* ── PAGE HERO (inner pages) ── */
 .page-hero {
