@@ -876,6 +876,7 @@ body.nav-open { overflow: hidden; }
   .section-pad-sm { padding: 40px 0; }
   .container, .container-narrow { padding: 0 20px; }
   .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+  .community-photos-grid { grid-template-columns: 1fr !important; }
   .activity-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .icon-box-grid { grid-template-columns: 1fr; gap: 16px; }
