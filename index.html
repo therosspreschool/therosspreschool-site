@@ -145,18 +145,28 @@
           <a href="programs.html" class="link-arrow">Learn about our approach <span>→</span></a>
         </div>
       </div>
-      <div style="position: relative; padding-bottom: 40px;">
+      <div style="position: relative; padding-bottom: 40px;" id="videoWrapper">
         <div class="video-card">
           <div style="position: relative; padding-bottom: 62.5%; overflow: hidden; border-radius: var(--radius-lg);">
-            <iframe src="https://api.vadoo.tv/iframe_test?id=XFccw252I4u38RWXUVY-0bUFueSZ-69c" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow: hidden;" allowfullscreen="1" allow="autoplay"></iframe>
+            <iframe id="videoIframe" src="https://api.vadoo.tv/iframe_test?id=XFccw252I4u38RWXUVY-0bUFueSZ-69c" scrolling="no" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute; overflow: hidden;" allowfullscreen="1" allow="autoplay"></iframe>
           </div>
         </div>
-        <div class="testimonial-float">
+        <div class="testimonial-float" id="testimonialFloat">
           <div class="stars">★★★★★</div>
           <p>"This preschool is truly one-of-a-kind. The teaching staff is the best of the best and the sense of community among the families is wonderful!!"</p>
           <div class="author"> -  Erin Budlong</div>
         </div>
       </div>
+      <script>
+        (function(){
+          var wrap = document.getElementById('videoWrapper');
+          var float = document.getElementById('testimonialFloat');
+          wrap.addEventListener('click', function(){ float.classList.add('hidden'); });
+          document.addEventListener('click', function(e){
+            if(!wrap.contains(e.target)){ float.classList.remove('hidden'); }
+          });
+        })();
+      </script>
     </div>
   </div>
 </section>

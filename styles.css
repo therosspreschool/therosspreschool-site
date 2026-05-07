@@ -458,6 +458,12 @@ em.green { font-style: normal; color: var(--green-light); }
   box-shadow: var(--shadow-lg);
   max-width: 290px;
   z-index: 3;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.testimonial-float.hidden {
+  opacity: 0;
+  transform: translateY(6px);
 }
 .testimonial-float .stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 8px; }
 .testimonial-float p { font-size: 0.83rem; color: var(--text-mid); font-style: italic; line-height: 1.6; margin-bottom: 10px; }
