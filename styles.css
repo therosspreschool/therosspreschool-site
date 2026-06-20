@@ -834,6 +834,21 @@ em.green { font-style: normal; color: var(--green-light); }
 }
 .mobile-nav-footer .btn { text-align: center; justify-content: center; }
 .mobile-nav-meta { margin-top: 24px; font-size: 0.8rem; color: var(--text-light); text-align: center; }
+.mobile-nav-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--navy);
+  cursor: pointer;
+  padding: 8px 10px;
+  line-height: 1;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.mobile-nav-close:hover { background: var(--gray-light); }
 body.nav-open { overflow: hidden; }
 @media (max-width: 1000px) {
   .two-col { grid-template-columns: 1fr; gap: 48px; }
