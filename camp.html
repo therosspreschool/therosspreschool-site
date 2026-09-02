@@ -514,4 +514,32 @@
   btn.addEventListener("click", function(){ window.scrollTo({top:0,behavior:"smooth"}); });
 })();
 </script>
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var utmKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+  var utms = {};
+  utmKeys.forEach(function(k) {
+    var v = params.get(k);
+    if (v) utms[k] = v;
+  });
+  if (Object.keys(utms).length > 0) {
+    sessionStorage.setItem('trp_utms', JSON.stringify(utms));
+  }
+  var saved = sessionStorage.getItem('trp_utms');
+  if (!saved) return;
+  var savedUtms = JSON.parse(saved);
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.href || '';
+    if (href.indexOf('.zite.so') === -1 && href.indexOf('.fillout.com') === -1) return;
+    var url = new URL(href);
+    Object.keys(savedUtms).forEach(function(k) {
+      if (!url.searchParams.has(k)) url.searchParams.set(k, savedUtms[k]);
+    });
+    link.href = url.toString();
+  });
+})();
+</script>
 </body></html>
