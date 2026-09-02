@@ -619,6 +619,16 @@
       if (!url.searchParams.has(k)) url.searchParams.set(k, savedUtms[k]);
     });
     link.href = url.toString();
+    // GA4 click tracking
+    if (typeof gtag !== 'undefined') {
+      if (href.indexOf('trpapply.zite.so') !== -1) {
+        var lt = (link.textContent || '').trim().toLowerCase();
+        if (lt.indexOf('tour') !== -1 || lt.indexOf('schedule') !== -1 || lt.indexOf('visit') !== -1) {
+          gtag('event', 'tour_signup_click', {link_text: link.textContent.trim()});
+        }
+        gtag('event', 'click_apply_button', {link_text: link.textContent.trim()});
+      }
+    }
   });
 })();
 </script>
